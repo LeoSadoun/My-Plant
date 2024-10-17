@@ -10,12 +10,16 @@ h1{
     text-align: center;
 }
 
+.navbar{
+    text-align: center;
+}
 .navbar ul{
     list-style-type: none;
     background-color: darkslategrey;
     margin: 0%;
     padding: 0%;
     overflow: hidden;
+    text-align: center;
 }
 .navbar a{
     color: white;
@@ -30,4 +34,5 @@ h1{
 
 .navbar li{
     float: left;
+    text-align: center;
 }
