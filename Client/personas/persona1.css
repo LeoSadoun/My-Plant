@@ -1,0 +1,246 @@
+.persona-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fefee3;
+    height: 1024px;
+    text-align: left;
+    font-size: 18px;
+    color: #606c38;
+    font-family: Inter;
+    scale: 80%;
+    margin-left: -4em;
+    margin-top: -4em;
+}
+
+.persona-11 {
+    position: absolute;
+    top: 38px;
+    left: 97px;
+    font-size: 35px;
+    font-weight: 700;
+    white-space: pre-wrap;
+}
+.backstory {
+    position: absolute;
+    top: 512px;
+    left: 97px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.frustrations {
+    position: absolute;
+    top: 521px;
+    left: 767px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.ideal-experiences {
+    position: absolute;
+    top: 753px;
+    left: 767px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.motivations {
+    position: absolute;
+    top: 753px;
+    left: 97px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.persona-1-child {
+    position: absolute;
+    top: 88px;
+    left: 97px;
+    max-height: 100%;
+    width: 213px;
+}
+.persona-1-item {
+    position: absolute;
+    top: 551px;
+    left: 97px;
+    max-height: 100%;
+    width: 213px;
+}
+.persona-1-inner {
+    position: absolute;
+    top: 790px;
+    left: 97px;
+    max-height: 100%;
+    width: 213px;
+}
+.vector-icon {
+    position: absolute;
+    top: 790px;
+    left: 767px;
+    max-height: 100%;
+    width: 267px;
+}
+.persona-1-child1 {
+    position: absolute;
+    top: 551px;
+    left: 767px;
+    max-height: 100%;
+    width: 267px;
+}
+.lorenzo-icon {
+    position: absolute;
+    top: 113px;
+    left: 97px;
+    border-radius: 5px;
+    width: 249px;
+    height: 373px;
+    object-fit: cover;
+}
+.personal-type {
+    position: absolute;
+    top: 113px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.name {
+    position: absolute;
+    top: 183px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.age {
+    position: absolute;
+    top: 253px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.location {
+    position: absolute;
+    top: 323px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.technical-comfort {
+    position: absolute;
+    top: 393px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.profession {
+    position: absolute;
+    top: 463px;
+    left: 409px;
+    font-weight: 700;
+    color: #000;
+}
+.sibling {
+    position: absolute;
+    top: 113px;
+    left: 593px;
+    font-weight: 700;
+}
+.lorenzo {
+    position: absolute;
+    top: 183px;
+    left: 593px;
+    font-weight: 700;
+}
+.i {
+    position: absolute;
+    top: 253px;
+    left: 593px;
+    font-weight: 700;
+}
+.miami-florida {
+    position: absolute;
+    top: 323px;
+    left: 593px;
+    font-weight: 700;
+}
+.technical-savvy {
+    position: absolute;
+    top: 393px;
+    left: 593px;
+    font-weight: 700;
+}
+.musician {
+    position: absolute;
+    top: 463px;
+    left: 593px;
+    font-weight: 700;
+}
+.rectangle-div {
+    position: absolute;
+    top: 93px;
+    left: 857px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 5px;
+    background-color: rgba(76, 149, 108, 0.7);
+    width: 501px;
+    height: 393px;
+}
+.i-love-plants {
+    margin: 0;
+}
+.i-love-plants-container {
+    position: absolute;
+    top: 113px;
+    left: 876px;
+    right: 876px;
+    font-size: 38px;
+    display: inline-block;
+    font-weight: 700;
+    color: #233d06;
+    width: 463px;
+    height: 350px;
+}
+.create-music-inspired {
+    margin-bottom: 0px;
+}
+.create-music-inspired-by-natur {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 24px;
+}
+.create-music-inspired-container {
+    position: absolute;
+    top: 821px;
+    left: 97px;
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    width: 631px;
+    height: 163px;
+}
+.grew-up-in-container {
+    position: absolute;
+    top: 582px;
+    left: 97px;
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    width: 631px;
+    height: 199px;
+}
+.studio-filled-with-container {
+    position: absolute;
+    top: 821px;
+    left: 767px;
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    width: 532px;
+    height: 163px;
+}
+.creative-blocks-especially-container {
+    position: absolute;
+    top: 582px;
+    left: 767px;
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    width: 511px;
+    height: 163px;
+}
