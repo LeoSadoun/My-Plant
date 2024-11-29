@@ -1,0 +1,327 @@
+
+.container {
+    width: 100%;
+    position: relative;
+    background-color: #fefee3;
+    height: 1024px;
+    text-align: left;
+    font-size: 18px;
+    color: #283618; /* Changed text color */
+    font-family: Inter;
+    scale: 80%;
+    margin-left: -4em;
+    margin-top: -4em;
+}
+
+.scenarioTitle {
+    font-size: 3.5rem;
+    color: #556b2f; /* Olive green for header */
+    margin-bottom: 30px;
+    font-family: Inter;
+    text-align: left;
+    padding-bottom: 20px;
+} 
+
+
+/* Rows & Nodes */
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative; /* Needed for connecting lines */
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative; /* Needed for connecting lines */
+}
+
+.row3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative; /* Needed for connecting lines */
+}
+
+.row4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative; /* Needed for connecting lines */
+}
+
+/* BOTH SIDES */
+.node1 {
+    background: #fff;
+    border: 2px solid #4C956C; /* Light green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%; /* Adjust for responsive sizing */
+    text-align: center;
+    position: relative; /* For connection dots */
+}
+
+.node1 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.node1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node1::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Left Bottom */
+.node2 {
+    background: #fff;
+    border: 2px solid #4C956C; /* Light green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%; /* Adjust for responsive sizing */
+    text-align: center;
+    position: relative; /* For connection dots */
+}
+
+.node2 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.node2::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node2::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8px;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+/* LEFT TOP */
+.node3 {
+    background: #fff;
+    border: 2px solid #4C956C; /* Light green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%; /* Adjust for responsive sizing */
+    text-align: center;
+    position: relative; /* For connection dots */
+}
+
+.node3 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.node3::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node3::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    top: 0%;
+    transform: translateY(-50%);
+}
+
+/* RIGHT BOTTOM */
+.node4 {
+    background: #fff;
+    border: 2px solid #4C956C; /* Light green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%; /* Adjust for responsive sizing */
+    text-align: center;
+    position: relative; /* For connection dots */
+}
+
+.node4 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.node4::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node4::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+/* RIGHT TOP */
+.node5 {
+    background: #fff;
+    border: 2px solid #4C956C; /* Light green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%; /* Adjust for responsive sizing */
+    text-align: center;
+    position: relative; /* For connection dots */
+}
+
+.node5 p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.node5::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node5::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #4C956C;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    top: 0%;
+    transform: translateY(-50%);
+}
+
+
+/* Connecting Lines */
+
+hr {
+    border: none;      
+    height: 2px;      
+    background-color: #4C956C; 
+    margin: 20px 0; 
+    z-index: 10;   
+  }
+  
+
+
+
+
+/* Profile Image */
+.lorenzo img{
+    border-radius: 5%;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    
+}
+.lorenzo{
+    padding-left: 80px;
+
+}
+
+.lily img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    /* border: 4px solid #4C956C; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.lily{
+    padding-left: 65px;
+}
+
+
+/* Connections */
+.row:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #ffffff;
+    z-index: -1;
+}
+
+.row:last-child:after {
+    display: none; /* No connector for the last row */
+}

@@ -1,31 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Plant</title>
-    <link rel="stylesheet" href="../style.css" /><!-- css file-->
-    
+    <title>Plant Match</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="prototype.css">
+    <!-- Box Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body>
-    <h1>My Plant</h1>
-    <nav class="navbar">
-        <ul>
-            <li><a href="../about/about.html">About</a></li>
-            <li><a href="../research/research.html">Research</a></li>
-            <li><a href="../personas/persona1.html">Persona1</a></li>
-            <li><a href="../personas/persona2.html">Persona2</a></li>
-            <li><a href="../scenario/scenario1.html">Scenario1</a></li>
-            <li><a href="../scenario/scenario2.html">Scenario2</a></li>
-            <li><a href="../moodboard/moodboard.html">Moodboard</a></li>
-            <li><a href="../flowchart/flowhcart.html">Flowchart</a></li>
-            <li><a href="../wireframe/wireframes.html">Wireframes</a></li>
-            <li><a href="../gui/gui.html">GUI</a></li>
-            <li><a href="../prototype/prototype.html">Prototype</a></li>
-            <li><a href="../references/references.html">References</a></li>
-        </ul>
-    </nav>
 
-    <script src="app.js"></script><!-- js file-->
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-leaf'></i>Plant<br>Match</a>
+        
+        <!-- Menu Icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Nav list -->
+        <ul class="navbar">
+            <!-- I don't know why home needs to be active at all sections -->
+            <!-- <li><a href="#home" class="home-active">Home</a></li> -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#plantCare">Plant Care</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="../moodboard/moodboard.html">Back</a></li>
+        </ul>
+
+        <!-- Profile -->
+        <div class="profile">
+            <!-- <img src="img/profile.jpg" alt="">
+            <span>Robyn Martin</span>
+            <i class='bx bx-caret-down'></i> -->
+
+
+            <a href="#about" class="btnSignup">Login</a>
+        </div>
+    </header>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide-container">
+                <div class="survey-card">
+
+                    <div class="home-text">
+                        <h1>Take our survey to find your perfect match</h1>
+                        <a href="#" class="btn">Start Now<i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                   
+                    <img src="img/Home/homeBackground.jpg" alt="">
+                    
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are deliver</span>
+                    <h1>Choose delicacy <br> the best healthy <br> chicken salad</h1>
+                    <a href="#" class="btn"> Shop now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="img/Home/homeBackground.jpg" alt="">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are deliver</span>
+                    <h1>Choose delicacy <br> the best healthy <br> chicken salad</h1>
+                    <a href="#" class="btn"> Shop now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="img/Home/homeBackground.jpg" alt="">
+
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+
+
+    <!-- Plant Care -->
+    <section class="PlantCare" id="plantCare">
+        <div class="heading">
+            <h1>Plant Care</h1>
+            <a href="#plantCare" class="linkOtherCare "> Other Care <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none">
+
+                <!-- CHANGE STROKE COLOR TO WHITE -->
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></a>
+        </div>
+
+        <!-- Container Content -->
+        <div class="PlantCare-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img/Plant Care/plantCare_succulent.jpg" alt="">
+                <h2>Cactus & Succulents</h2>
+                <span class="plant_care_text">
+                    To care for cacti and succulents, provide plenty of bright light (direct for cacti, indirect for most succulents) 
+                    and use well-draining soil in pots with drainage holes. Water only when the soil is completely dry, following the 
+                    "soak and dry" method, and reduce watering in winter. Keep them in a warm environment (60–80°F) with low humidity. 
+                    Fertilize monthly during spring and summer with diluted cactus fertilizer but skip in winter. Watch for overwatering 
+                    (yellowing, mushy stems), underwatering (shriveling), and pests like mealybugs. Repot every 1–2 years or as needed, 
+                    trimming dead leaves carefully.
+                </span>
+                <!-- Don't know if we need that -->
+                <!-- <i class='bx bx-right-arrow-alt'></i> -->
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img/Plant Care/plantCare_peaceLily.webp " alt="">
+                <h2>Peace Lily</h2>
+                <span class="plant_care_text">
+                    To care for a peace lily, place it in bright, indirect light, as direct sunlight can scorch its leaves. Keep the soil 
+                    consistently moist but not waterlogged, watering thoroughly when the top inch of soil feels dry. Peace lilies thrive in warm, 
+                    humid environments, so maintain temperatures between 65–85°F and consider misting the leaves or using a humidity tray. Fertilize 
+                    every 6–8 weeks during the growing season with a balanced, diluted houseplant fertilizer. Remove yellow or wilted leaves to keep 
+                    the plant healthy, and ensure the pot has drainage holes to prevent root rot.
+                </span>
+                <!-- Don't know if we need that -->
+                <!-- <i class='bx bx-right-arrow-alt'></i> -->
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="img/Plant Care/plantCare_orchid.webp" alt="">
+                <h2>Orchid</h2>
+                <span class="plant_care_text">
+                    To care for an orchid, place it in bright, indirect light, such as near an east or south-facing window, avoiding direct sunlight 
+                    that can scorch its leaves. Use a well-draining potting mix like bark or sphagnum moss, and water only when the mix feels dry to 
+                    the touch, typically every 7–10 days. Orchids prefer high humidity, so mist them occasionally or place them on a humidity tray. 
+                    Maintain a temperature range of 65–75°F and fertilize with a balanced orchid fertilizer every 2–4 weeks during the growing season. 
+                    After blooming, trim the flower spike to encourage new growth and blooms. Ensure the pot has good drainage to prevent root rot.
+                </span>
+                <!-- Don't know if we need that -->
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+        </div>
+
+
+    </section>
+    
+    
+    <!-- Shop -->
+    <section class="Shop" id="shop">
+        <div class="heading">
+            <h1>Shop</h1>
+            <a href="#plantCare" class="linkOtherCare "> Others <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#606C38" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+            </svg></a>
+        </div>
+
+        <!-- Shop content-->
+        <div class="Shop-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img/Shop/shop_AloeVera.jpg" alt="">
+                <span>Aloe Vera</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img/Shop/shop_peacelily.webp" alt="">
+                <span>Peace Lily</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+
+            <!-- box 3 -->
+            <div class="box">
+                <img src="img/Shop/shop_orchid.avif" alt="">
+                <span>Orchid</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box">
+                <img src="img/Shop/shop_snakeplant.jpg" alt="">
+                <span>Snake Plant</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box">
+                <img src="img/Shop/shop_monstera.webp" alt="">
+                <span>Monstera</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+
+            <!-- box 6 -->
+            <div class="box">
+                <img src="img/Shop/shop_MoneyTree.webp" alt="">
+                <span>Money Tree</span>
+                <p>$25</p>
+                <i class='bx bx-plus-circle'></i>
+                <i class='bx bx-heart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <!-- About content-->
+        <div class="about-container">
+
+            <div class="heading">
+                <h1>About</h1>
+                <a href="#plantCare" class="linkOtherCare "> Others <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#606C38" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+            </div>
+
+            <!-- box 1 -->
+            <div class="box">
+                <span class="match">150+ <br> Matches</span>
+                <p>At Plant Match, our mission is simple: to match you with the perfect plant for your lifestyle.
+                    Whether you're a seasoned plant enthusiast or just starting your green journey, we believe that
+                    everyone deserves to enjoy the benefits of a thriving plant environment.
+                <br>
+                <br>
+                    We understand that every lifestyle is unique, so we take the time to help you find plants that
+                    suit your space, routine, and care preferences. From low-maintenance options for busy schedules to lush
+                    greenery for those with more time to nurture, we have the perfect match for everyone.
+                </p>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box">
+                <img src="img/About/Mask group-1.png" alt="">
+                <img src="img/About/Mask group-2.png" alt="">
+                <img src="img/About/Mask group-3.png" alt="">
+            </div>
+            <span class=" title">Let’s grow together!</span>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact" id="Contact">
+        <!-- contact content-->
+        <div class="contact-container"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <!-- Footer content-->
+        <div class="footer-box">
+
+            <a href="#" class="logo"><i class='bx bxs-leaf'></i>Plant<br>Match</a>
+            <div class="social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-youtube'></i>
+
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h2>Service</h2>
+            <a href="#">Customer Support</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Returns & Exchanges</a>
+        </div>
+
+        <div class="footer-box">
+            <h2>How does it Work</h2>
+            <a href="#">Get Your Match</a>
+            <a href="#">Enjoy Expert Guidance</a>
+            <a href="#">Ongoing Support</a>
+        </div>
+
+        <div class="footer-box">
+            <h2>Contact us</h2>
+            <p>305 - 555 - 5555</p>
+            <p>Hello@plantMatch.com</p>
+            <p>Miami, FL</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="prototype.js"></script>
 </body>
 </html>

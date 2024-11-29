@@ -1,0 +1,693 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding: 2em;
+  scroll-behavior: smooth;
+}
+
+Same variables */ :root {
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #ff7e00;
+  --light-orange-color: #f75f1d;
+  --text-color: #1a2428;
+  --bg-color: #fff;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #606c38;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: #283618;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 4.5rem 0 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 8px 11px rgb(14 55 54/ 15%);
+  padding: 20px 100px;
+  transition: 0.5s;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--green-color);
+  column-gap: 0.5rem;
+}
+
+.logo .bx {
+  font-size: 40px;
+  color: #3cb815;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 00.5rem;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #283618;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover,
+.navbar .home-active {
+  color: #dc970f;
+  text-decoration: none;
+  transition: color 0.5ms;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 840px;
+  display: flex;
+  align-items: center;
+  background: url(img/diverse-collection-succulent-plants-white-pots-wooden-shelf-display-outdoor-market_641503-391042.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container img {
+  width: 400px;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+
+/* HOME */
+.home-text {
+  margin-top: 200px;
+  padding: 0 150px;
+}
+
+.home-text span {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--green-color);
+}
+
+.home-text h1 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.btnSignup {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ff7e00;
+  color: #283618;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 300;
+  margin-top: 1px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff7e00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn i {
+  margin-left: 5px;
+}
+
+.bx-plus-circle:hover {
+  cursor: pointer;
+}
+
+.bx-heart:hover {
+  cursor: pointer;
+}
+
+.btn:hover,
+.btnSignup:hover {
+  background: #7cb56a;
+  transition: 0.2s ease;
+}
+
+.btn .bx {
+  padding: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  font-size: 20px;
+  margin: auto;
+}
+
+.swiper-slide-container {
+  position: relative;
+}
+.swiper-slide-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.survey-card {
+  position: absolute;
+  /* Position it absolutely within the .container */
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  /* Center it horizontally and vertically */
+  width: 394px;
+  height: 236px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #cbd7a3;
+  background: rgba(96, 108, 56, 0.69);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.survey-card .home-text {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.survey-card .home-text h1 {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* PLANT CARE */
+.linkOtherCare {
+  width: 270px;
+  height: 57px;
+  flex-shrink: 0;
+  padding: 10px;
+  background: var(--Dark-olive, #283618);
+  border-radius: 5rem;
+  border-style: solid;
+  border-radius: 37px;
+  border: 1px solid var(--olive, #ffffff);
+}
+
+.linkOtherCare {
+  color: var(--olive, #ffffff);
+  font-size: 23.782px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.PlantCare {
+  max-width: 100%;
+  background-color: #283618;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PlantCare h1 {
+  color: #fbfbfb;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.PlantCare h2 {
+  color: #1a2428;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.PlantCare-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.PlantCare-container .box {
+  position: relative;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.PlantCare-container .box:hover {
+  transform: translateY(10px);
+  transition: 0.2s all linear;
+}
+
+.PlantCare-container .box span {
+  font-size: small;
+  font-weight: 300;
+}
+
+.PlantCare-container .box img {
+  max-width: 300;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Initially hide the text */
+.plant_care_text {
+  display: none; /* Hide the text by default */
+  position: absolute;
+  bottom: 50px; /* Adjust this to bring it up closer to the image */
+  left: 10px;
+  right: 10px;
+  padding: 15px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1; /* Ensure the text appears above the image */
+}
+/* When hovering over the box, hide the image and show the text */
+.PlantCare-container .box:hover img {
+  opacity: 0; /* Hide the image */
+}
+
+.box:hover .plant_care_text {
+  display: block; /* Show the text */
+  cursor: pointer;
+}
+
+/* SHOP */
+.Shop {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.Shop-container .box {
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.Shop-container .box:hover {
+  cursor: pointer;
+}
+
+.Shop-container .box img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.Shop-container span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.Shop-container p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.Shop-container .box .bx-plus-circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #606c38;
+  padding: 50px 20px;
+  font-size: 32px;
+}
+
+.Shop-container .box .bx-plus-circle:hover {
+  color: #dc970f;
+  transition: 0.2s all linear;
+}
+
+.Shop-container .box .bx-heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  color: #606c38;
+}
+
+.Shop-container .box .bx-heart:hover {
+  color: #ff0720;
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+.about {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit), minmax(240px, auto);
+  align-items: center;
+  gap: 1.5rem;
+}
+.about .match span {
+  justify-items: center;
+  align-items: center;
+}
+
+.about .box p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 50px;
+  margin-left: 10rem;
+}
+
+.about .box {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 0.5rem;
+  margin-top: 5rem;
+}
+
+.about .box img {
+  width: 300;
+  height: 300px;
+  object-fit: contain;
+}
+
+.about .title {
+  display: flex;
+  align-items: center;
+  object-position: center;
+}
+
+.about span {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  justify-content: center;
+  /* Center images */
+}
+
+.contact {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit), minmax(240px, auto);
+  background: url("img/About-bg.png") lightgray 50% / cover no-repeat;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-container {
+  border-radius: 12px;
+  border: 1px solid #606c38;
+  background: rgba(255, 255, 255, 0.43);
+  backdrop-filter: blur(10px);
+}
+
+.footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: #fefae0;
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+
+.footer-box {
+  display: grid;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.footer-box p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.social.bx {
+  padding: 10px;
+  background: #283618;
+  color: #cbd7a3;
+  border-radius: 5rem;
+  font-size: 20px;
+}
+
+.social .bx:hover {
+  background: #c0eb7b;
+  color: #f75f1d;
+  transition: 0.2s all linear;
+}
+
+.footer-box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #283618;
+}
+
+.footer-box p {
+  font-size: 0.9rem;
+  font-weight: 00;
+  margin-bottom: 1rem;
+  color: #283618;
+}
+
+.footer-box a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #283618;
+}
+
+.footer-box a:hover {
+  color: #f75f1d;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Making responsive */
+@media (max-width: 1080px) {
+  header {
+    padding: 18px 60px;
+  }
+
+  .home-text {
+    padding: 0 100px;
+  }
+
+  .container img {
+    right: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+
+  section {
+    padding: 50px 4%;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}
+
+@media (max-width: 851px) {
+  header {
+    padding: 12px 4%;
+  }
+
+  #menu-icon {
+    display: initial;
+  }
+
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 /15%);
+    text-align: 0.2s all linear;
+    text-align: left;
+  }
+
+  .navbar a {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+  }
+
+  .navbar a:hover,
+  .navbar .home-active {
+    border-radius: 00.5rem;
+    color: #f75f1d;
+  }
+
+  .navbar.active {
+    top: 100%;
+  }
+
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .container img {
+    width: 390px;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .PlantCare-container {
+    grid-template-columns: repeat(auto fit, minmax(244px, auto));
+  }
+}
+
+@media (max-width: 71px) {
+  .container svg {
+    right: 20px;
+  }
+
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  }
+
+  .about svg {
+    order: 2;
+  }
+
+  .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
