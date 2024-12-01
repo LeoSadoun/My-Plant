@@ -144,9 +144,28 @@ header {
 }
 
 /* HOME */
+
+
 .home-text {
+  width: 300px;
+  height: 250px;
+  flex-shrink: auto;
+  border-radius: 5px;
+  border: 1px solid #cbd7a3;
+  background: rgba(96, 108, 56, 0.69);
+  backdrop-filter: blur(8px);
+  padding-left: 300px; 
+  /* display: flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; */
+
   margin-top: 200px;
-  padding: 0 150px;
+  padding: 0;
+  background-position: center;
+  background-color: #283618;
+  opacity: .9;
 }
 
 .home-text span {
@@ -159,6 +178,12 @@ header {
   font-size: 24px;
   line-height: 1.4;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .btnSignup {
@@ -176,13 +201,15 @@ header {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: right;
   background-color: #ff7e00;
   color: #fff;
   padding: 10px 20px;
+  padding-left: 40px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 15px;
+  margin-left: 60px;
 }
 
 .btn i {
@@ -222,11 +249,13 @@ header {
 }
 
 .survey-card {
-  position: absolute;
-  /* Position it absolutely within the .container */
+  /* position: absolute; */
+
+  /* Position it absolutely within the .container  */
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
+
   /* Center it horizontally and vertically */
   width: 394px;
   height: 236px;
@@ -240,6 +269,7 @@ header {
   justify-content: center;
   text-align: center;
   color: #fff;
+  
 }
 
 .survey-card .home-text {
