@@ -64,10 +64,51 @@ header {
 }
 
 .profile {
+  position: relative;
   display: flex;
   align-items: center;
-  column-gap: 0.5rem;
   cursor: pointer;
+  right: 10px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile i {
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background: #f4f4f4;
 }
 
 .profile img {
@@ -372,6 +413,7 @@ header {
 .plant_care_text {
   display: none; /* Hide the text by default */
   position: absolute;
+  top: -8px;
   bottom: 50px; /* Adjust this to bring it up closer to the image */
   left: 10px;
   right: 10px;
@@ -606,6 +648,86 @@ header {
   text-align: center;
   padding: 20px;
 }
+
+/* LOGIN */
+
+
+/* Popup Styles */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding-left: 950px;
+  padding-top: 90px;
+  /* background-color: #1a2428; */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup-content button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #218838;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.popup-content .close:hover {
+  color: #333;
+}
+
+.close{
+  font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
 
 /* Making responsive */
 @media (max-width: 1080px) {

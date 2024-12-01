@@ -33,15 +33,35 @@
         </ul>
 
         <!-- Profile -->
-        <div class="profile">
-            <!-- <img src="img/profile.jpg" alt="">
+        <div class="profile" id="profile">
+            <img src="img/profile.jpg" alt="Profile Picture">
             <span>Robyn Martin</span>
-            <i class='bx bx-caret-down'></i> -->
-
-
-            <a href="#about" class="btnSignup">Login</a>
+            <i class='bx bx-caret-down'></i>
+            <div class="dropdown" id="dropdown">
+                <a href="#preferences">User Preferences</a>
+                <a href="#settings">Settings</a>
+                <a href="#feed">Feed</a>
+                <a href="#likes">Likes</a>
+            </div>
         </div>
+
+        <button class="btnSignup" id="loginBtn">Login</button>
+
     </header>
+
+         <!-- Popup Section -->
+         <div class="popup-overlay" id="popup">
+            <div class="popup-content">
+                <span class="close" id="closeBtn"></span>
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="password" placeholder="Enter your password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
 
 
     <!-- Home -->
