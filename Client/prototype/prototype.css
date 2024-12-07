@@ -40,6 +40,11 @@ section {
   padding: 4.5rem 0 1.5rem;
 }
 
+section .heading {
+  margin-top: 20px;
+  
+}
+
 img {
   width: 100%;
 }
@@ -196,12 +201,13 @@ header {
   background: rgba(96, 108, 56, 0.69);
   backdrop-filter: blur(8px);
   padding-left: 300px; 
+
   /* display: flex;
   align-items:center;
   justify-content: center;
   text-align: center;
   color: #fff; */
-
+  margin-left: 70px;
   margin-top: 200px;
   padding: 0;
   background-position: center;
@@ -330,6 +336,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .heading h1 {
@@ -366,6 +373,16 @@ header {
   margin-right: auto;
 }
 
+
+.PlantCare-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
 .PlantCare h1 {
   color: #fbfbfb;
   font-size: 1.6rem;
@@ -378,12 +395,6 @@ header {
   font-weight: 600;
 }
 
-.PlantCare-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 1rem;
-  margin-top: 2rem;
-}
 
 .PlantCare-container .box {
   position: relative;
@@ -443,10 +454,13 @@ header {
 }
 
 .Shop-container {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   gap: 1rem;
   margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
 .Shop-container .box {
@@ -508,17 +522,19 @@ header {
 
 .about {
   max-width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit), minmax(240px, auto);
   align-items: center;
   gap: 1.5rem;
 }
 .about .match span {
-  justify-items: center;
   align-items: center;
+  margin-left: 70px;
 }
 
 .about .box p {
@@ -553,6 +569,7 @@ header {
   font-weight: 200;
   font-style: italic;
   justify-content: center;
+ 
   /* Center images */
 }
 
@@ -730,7 +747,7 @@ header {
 
 
 /* Making responsive */
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
   header {
     padding: 18px 60px;
   }
@@ -741,6 +758,19 @@ header {
 
   .container img {
     right: 100px;
+  }
+  .about .box {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    gap: 0.1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .about .box img {
+    width: 275px;
+    height: 275px;
+    object-fit: contain;
   }
 }
 
