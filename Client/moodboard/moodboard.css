@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     background-color: #fefee3;
-    height: 1024px;
+    height: 400px;
     text-align: left;
     font-size: 24px;
     color: #606c38;
@@ -11,6 +11,12 @@
     margin-left: -4em;
     margin-top: -4em;
 
+}
+
+h3{
+    font-size: 3rem;
+    padding-left: 70px;
+    color: #606c38;
 }
 
 .typography-child {
