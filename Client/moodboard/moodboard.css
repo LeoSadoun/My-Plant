@@ -51,6 +51,7 @@
 .lorem-ipsum-dolor {
     margin: 0;
     white-space: pre-wrap;
+    color: #606c38;
 }
 .blank-line {
     margin: 0;
@@ -62,7 +63,7 @@
 }
 .lorem-ipsum-dolor-container {
     position: absolute;
-    top: 154px;
+    top: 55px;
     left: 0px;
     display: inline-block;
     width: 369px;
